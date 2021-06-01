@@ -1,0 +1,21 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  width: 300px;
+  height: 400px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+}
