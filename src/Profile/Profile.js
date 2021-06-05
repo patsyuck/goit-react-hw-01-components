@@ -1,7 +1,7 @@
 import user from './user.json';
-import './Product.css';
+import './Profile.css';
 
-function Product() {
+function Profile() {
   return (
     <div class="profile">
       <div class="description">
@@ -29,4 +29,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Profile;
