@@ -1,7 +1,8 @@
 import statisticalData from './statistical-data.json';
 import './Statistics.css';
 
-function Statistics() {
+/* 2-ий тип експорту -- іменований */
+export function Statistics() {
   return (
     <section class="statistics">
       <h2 class="title">Upload stats</h2>
@@ -26,5 +27,3 @@ function Statistics() {
     </section>
   );
 }
-
-export default Statistics;

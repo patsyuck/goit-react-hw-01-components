@@ -29,4 +29,5 @@ function Profile() {
   );
 }
 
+/* 1-ий тип експорту -- по дефолту безпосередньо із файлу */
 export default Profile;

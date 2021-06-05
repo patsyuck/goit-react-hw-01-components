@@ -1,7 +1,8 @@
 import transactions from './transactions.json';
 import './Transactions.css';
 
-function Transactions() {
+/* 4-ий тип експорту -- через індексний файл */
+export function Transactions() {
   return (
     <table class="transaction-history">
       <thead>
@@ -26,5 +27,3 @@ function Transactions() {
     </table>
   );
 }
-
-export default Transactions;
