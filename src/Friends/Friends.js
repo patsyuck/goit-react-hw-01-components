@@ -5,9 +5,13 @@ import './Friends.css';
 export function Friends() {
   return (
     <ul class="friend-list">
-      <li>Friend 1</li>
-      <li>Friend 2</li>
-      <li>Friend 3</li>
+      {friends.map(friend => (
+        <li class="item" key={friend.id}>
+          <span class="status">статус</span>
+          <img class="avatar" src={friend.avatar} alt="" width="48" />
+          <p class="name">{friend.name}</p>
+        </li>
+      ))}
     </ul>
   );
 }

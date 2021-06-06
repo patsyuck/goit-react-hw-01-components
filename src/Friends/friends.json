@@ -1,31 +1,31 @@
 [
   {
     "avatar": "https://www.flaticon.com/svg/static/icons/svg/763/763704.svg",
-    "name": "Mango",
+    "name": "Стецько",
     "isOnline": true,
     "id": 1812
   },
   {
     "avatar": "https://www.flaticon.com/svg/static/icons/svg/1998/1998671.svg",
-    "name": "Kiwi",
+    "name": "Саша Ґрей",
     "isOnline": false,
     "id": 1137
   },
   {
     "avatar": "https://www.flaticon.com/svg/static/icons/svg/1623/1623681.svg",
-    "name": "Ajax",
+    "name": "Васілій Іванович",
     "isOnline": true,
     "id": 1213
   },
   {
     "avatar": "https://www.flaticon.com/svg/static/icons/svg/2977/2977285.svg",
-    "name": "Jay",
+    "name": "Мойша",
     "isOnline": true,
     "id": 1714
   },
   {
     "avatar": "https://www.flaticon.com/svg/static/icons/svg/1998/1998749.svg",
-    "name": "Poly",
+    "name": "Нимидора",
     "isOnline": false,
     "id": 1284
   }

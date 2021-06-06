@@ -4,3 +4,7 @@
   text-align: center;
   background-color: cornflowerblue;
 }
+
+li {
+  list-style: none;
+}

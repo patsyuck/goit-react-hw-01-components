@@ -1,0 +1,13 @@
+.friend-list li {
+  display: flex;
+  align-items: center;
+  /*justify-content: flex-start;*/
+  max-width: 9cm;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.friend-list li:not(:last-child) {
+  margin-bottom: 5mm;
+}
