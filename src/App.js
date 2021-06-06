@@ -23,7 +23,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={statisticalData} />
+      <Statistics title="UPLOAD STATS" stats={statisticalData} />
       <FriendsList friends={friends} />
       <Transactions items={transactions} />
     </div>

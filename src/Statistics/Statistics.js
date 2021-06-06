@@ -5,7 +5,7 @@ import './Statistics.css';
 export function Statistics({ title, stats }) {
   return (
     <section class="statistics">
-      <h2 class="title">{title}</h2>
+      {title !== undefined && <h2 class="title">{title}</h2>}
       <ul class="stat-list">
         {stats.map(data => (
           <li class="item" key={data.id}>
@@ -17,6 +17,10 @@ export function Statistics({ title, stats }) {
     </section>
   );
 }
+
+/* Statistics.defaultProps = {
+  title: "UPLOAD STATS"
+} */
 
 Statistics.propTypes = {
   title: PropTypes.string,
