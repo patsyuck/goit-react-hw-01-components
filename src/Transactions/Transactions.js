@@ -1,8 +1,7 @@
-import transactions from './transactions.json';
 import './Transactions.css';
 
 /* 4-ий тип експорту -- через індексний файл */
-export function Transactions() {
+export function Transactions({ items }) {
   return (
     <table class="transaction-history">
       <thead>
@@ -13,7 +12,7 @@ export function Transactions() {
         </tr>
       </thead>
       <tbody>
-        {transactions.map(transaction => (
+        {items.map(transaction => (
           <tr key={transaction.id}>
             <td>{transaction.type}</td>
             <td>{transaction.amount}</td>

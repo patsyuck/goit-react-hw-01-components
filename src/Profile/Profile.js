@@ -1,34 +1,33 @@
-import user from './user.json';
 import './Profile.css';
 
-function Profile() {
+function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div class="profile">
       <div class="description">
-        <img class="avatar" src={user.avatar} alt="user avatar" />
+        <img class="avatar" src={avatar} alt="user avatar" />
         <p class="name">
-          <b>{user.name}</b>
+          <b>{name}</b>
         </p>
-        <p class="tag">@{user.tag}</p>
-        <p class="location">{user.location}</p>
+        <p class="tag">@{tag}</p>
+        <p class="location">{location}</p>
       </div>
       <ul class="stats">
         <li>
           <span class="label">Followers</span>
           <span class="quantity">
-            <b>{user.stats.followers}</b>
+            <b>{stats.followers}</b>
           </span>
         </li>
         <li>
           <span class="label">Views</span>
           <span class="quantity">
-            <b>{user.stats.views}</b>
+            <b>{stats.views}</b>
           </span>
         </li>
         <li>
           <span class="label">Likes</span>
           <span class="quantity">
-            <b>{user.stats.likes}</b>
+            <b>{stats.likes}</b>
           </span>
         </li>
       </ul>

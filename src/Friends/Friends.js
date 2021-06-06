@@ -1,8 +1,7 @@
-import friends from './friends.json';
 import './Friends.css';
 
 /* 3-ий тип експорту -- іменований з перейменуванням */
-export function Friends() {
+export function Friends({ friends }) {
   return (
     <ul class="friend-list">
       {friends.map(friend => (
