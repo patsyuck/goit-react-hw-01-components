@@ -6,23 +6,30 @@ function Profile() {
     <div class="profile">
       <div class="description">
         <img class="avatar" src={user.avatar} alt="user avatar" />
-        <p class="name">{user.name}</p>
+        <p class="name">
+          <b>{user.name}</b>
+        </p>
         <p class="tag">@{user.tag}</p>
         <p class="location">{user.location}</p>
       </div>
-
       <ul class="stats">
         <li>
           <span class="label">Followers</span>
-          <span class="quantity">{user.stats.followers}</span>
+          <span class="quantity">
+            <b>{user.stats.followers}</b>
+          </span>
         </li>
         <li>
           <span class="label">Views</span>
-          <span class="quantity">{user.stats.views}</span>
+          <span class="quantity">
+            <b>{user.stats.views}</b>
+          </span>
         </li>
         <li>
           <span class="label">Likes</span>
-          <span class="quantity">{user.stats.likes}</span>
+          <span class="quantity">
+            <b>{user.stats.likes}</b>
+          </span>
         </li>
       </ul>
     </div>

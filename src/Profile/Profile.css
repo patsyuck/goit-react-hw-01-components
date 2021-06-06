@@ -5,22 +5,35 @@ img {
   margin: 0 auto;
 }
 
+.profile {
+  max-width: 9cm;
+  /*max-height: 12cm;*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
 .description {
   text-align: center;
 }
 
 .avatar {
-  width: 300px;
-  height: 400px;
+  width: 35mm;
+  height: 35mm;
+  padding-top: 11mm;
+  margin-bottom: 11mm;
 }
 
 .stats {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  background-color: dodgerblue;
 }
 
 .stats li {
   display: flex;
   flex-direction: column;
+  padding-top: 8mm;
+  padding-bottom: 8mm;
 }
