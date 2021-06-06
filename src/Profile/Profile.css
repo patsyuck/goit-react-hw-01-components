@@ -14,13 +14,15 @@ img {
 
 .description {
   text-align: center;
+  padding-bottom: 11mm;
 }
 
-.avatar {
-  width: 35mm;
-  height: 35mm;
+.description .avatar {
+  width: 36mm;
+  height: 36mm;
   padding-top: 11mm;
   margin-bottom: 11mm;
+  border-radius: 18mm;
 }
 
 .stats {

@@ -7,9 +7,9 @@ export function Transactions({ items }) {
     <table class="transaction-history">
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th>TYPE</th>
+          <th>AMOUNT</th>
+          <th>CURRENCY</th>
         </tr>
       </thead>
       <tbody>

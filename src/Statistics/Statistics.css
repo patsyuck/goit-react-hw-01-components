@@ -1,12 +1,13 @@
-.title {
-  text-transform: capitalize;
-}
-
 .statistics {
   max-width: 9cm;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+}
+
+.title {
+  padding-top: 11mm;
+  padding-bottom: 4mm;
 }
 
 .stat-list {
@@ -17,4 +18,14 @@
 .stat-list li {
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+.label {
+  padding-top: 4mm;
+  margin-bottom: 4mm;
+}
+
+.percentage {
+  padding-bottom: 5mm;
 }
