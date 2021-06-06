@@ -1,0 +1,20 @@
+.transaction-history {
+  max-width: 27cm;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: aqua;
+}
+
+th {
+  width: 9cm;
+}
+
+tbody {
+  background-color: white;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: darkgray;
+}
