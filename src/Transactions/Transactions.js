@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Transactions.css';
 
 /* 4-ий тип експорту -- через індексний файл */
@@ -23,3 +24,12 @@ export function Transactions({ items }) {
     </table>
   );
 }
+
+Transactions.propTypes = {
+  items: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+  }).isRequired,
+};

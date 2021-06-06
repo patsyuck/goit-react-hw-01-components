@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Statistics.css';
 
 /* 2-ий тип експорту -- іменований */
@@ -16,3 +17,12 @@ export function Statistics({ title, stats }) {
     </section>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired,
+};

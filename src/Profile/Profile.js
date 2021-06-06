@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Profile.css';
 
 function Profile({ name, tag, location, avatar, stats }) {
@@ -34,6 +35,18 @@ function Profile({ name, tag, location, avatar, stats }) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 /* 1-ий тип експорту -- по дефолту безпосередньо із файлу */
 export default Profile;
