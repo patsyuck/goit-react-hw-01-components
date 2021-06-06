@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 import './Profile.css';
 
+function addCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div class="profile">
@@ -16,19 +20,19 @@ function Profile({ name, tag, location, avatar, stats }) {
         <li>
           <span class="label">Followers</span>
           <span class="quantity">
-            <b>{stats.followers}</b>
+            <b>{addCommas(stats.followers)}</b>
           </span>
         </li>
         <li>
           <span class="label">Views</span>
           <span class="quantity">
-            <b>{stats.views}</b>
+            <b>{addCommas(stats.views)}</b>
           </span>
         </li>
         <li>
           <span class="label">Likes</span>
           <span class="quantity">
-            <b>{stats.likes}</b>
+            <b>{addCommas(stats.likes)}</b>
           </span>
         </li>
       </ul>
